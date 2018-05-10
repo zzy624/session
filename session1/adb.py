@@ -70,12 +70,12 @@ def point(s):
 	print p
 
 if __name__ == '__main__':
-	# connect_phone()
+	connect_phone()
 	# clean_apk()
 	# get_input()
 	# get_default_input()
 	# set_input()
-	get_packages()
+	# get_packages()
 	# get_package_information()
 	# zip_file()
 	# get_activity()
