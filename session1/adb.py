@@ -36,11 +36,11 @@ def uninstall_apk(apk):
 
 # 查看当前activity命令
 def get_activity():
-	os.system('adb shell dumpsys activity | find  "mFocusedActivity" ')
+	os.system('adb -s UEUDU16C21008041 shell dumpsys activity | find  "mFocusedActivity" ')
 
 # 查看所有包名
 def get_packages():
-	os.system('adb shell pm list packages')
+	os.system('adb shell pm list packages -3')
 
 # 查看应用信息
 def get_package_information():
@@ -70,14 +70,14 @@ def point(s):
 	print p
 
 if __name__ == '__main__':
-	# connect_phone()
+	connect_phone()
 	# clean_apk()
 	# get_input()
 	# get_default_input()
 	# set_input()
-	get_packages()
+	# get_packages()
 	# get_package_information()
 	# zip_file()
-	# get_activity()
+	get_activity()
 	# uninstall_apk('com.ss.android.ugc.aweme')
-	# point('[30,1398][300,1668]')
+	# point('[246,616][348,732]')
