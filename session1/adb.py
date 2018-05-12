@@ -70,14 +70,14 @@ def point(s):
 	print p
 
 if __name__ == '__main__':
-	connect_phone()
-	# clean_apk()
+	# connect_phone()
+	clean_apk("com.cubic.autohome")
 	# get_input()
 	# get_default_input()
 	# set_input()
 	# get_packages()
 	# get_package_information()
 	# zip_file()
-	get_activity()
+	# get_activity()
 	# uninstall_apk('com.ss.android.ugc.aweme')
 	# point('[246,616][348,732]')
