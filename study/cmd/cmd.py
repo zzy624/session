@@ -29,22 +29,23 @@ def Subprocess():
     # with open('./log.txt','w') as f:
     result = subprocess.Popen('python',shell=True,stdin=subprocess.PIPE, stdout=subprocess.PIPE)
     # print result.stdout.readlines()
+    # result.wait()
     result.stdin.write('print 1')
     result.stdin.close()
     print result.stdout.readlines()
     result.stdout.close()
     print 'This is Subprocess call'
-    result2 = subprocess.call('ls',shell=True)
-    # print result2
+    result2 = subprocess.call('python',shell=True)
+    print result2
     # print 'This is Subprocess '
     # result3 = subprocess.
 
 def GetRedis():
 
-    redis = subprocess.Popen('ls',shell=True,stdout=subprocess.PIPE)
+    redis = subprocess.Popen("cmd /c cd D:",stdout=subprocess.PIPE)
     # value = subprocess.Popen('print 1',shell=True,stdin=redis.stdout,stdout=subprocess.PIPE)
-    # redis.stdin.write('print 1')
     print redis.communicate()
+    # print redis.communicate()
 
 if __name__ == '__main__':
     # System()
