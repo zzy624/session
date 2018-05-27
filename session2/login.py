@@ -10,7 +10,7 @@ sys.setdefaultencoding('utf8')
 def login():
 	desired_caps = {'platformName': 'Android',
 	                'platformVersion': '7.0',
-	                'deviceName': '127.0.0.1:62001',
+	                'deviceName': '192.168.31.171:5555',
 	                'appPackage': 'com.cubic.autohome',
 	                'appActivity': '.LogoActivity',
 	                'unicodeKeyboard': True,
