@@ -15,4 +15,6 @@ def main():
     print(b)
 
 if __name__ == '__main__':
+    x = "suu"
+    eval( 'print(3 * x)' )
     main()
